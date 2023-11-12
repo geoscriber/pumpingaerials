@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerial Panoramas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 1em;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .photo {
+            cursor: pointer;
+        }
+
+        .photo img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .photo p {
+            text-align: center;
+            margin: 8px 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Aerial Panoramas</h1>
+    </header>
+
+    <div class="gallery">
+        <div class="photo" onclick="redirectToPage('https://geoscriber.github.io/matalahibtalayan')">
+            <img src="images/matalahibtalayan.png" alt="Matalahibtalayan">
+            <p>Matalahibtalayan</p>
+        </div>
+        <div class="photo" onclick="redirectToPage('https://geoscriber.github.io/tatalon1')">
+            <img src="images/tatalon1.png" alt="Tatalon 1">
+            <p>Tatalon 1</p>
+        </div>
+        <div class="photo" onclick="redirectToPage('https://geoscriber.github.io/tatalon2')">
+            <img src="images/tatalon2.png" alt="Tatalon 2">
+            <p>Tatalon 2</p>
+        </div>
+        <div class="photo" onclick="redirectToPage('https://geoscriber.github.io/tatalon3')">
+            <img src="images/tatalon3.png" alt="Tatalon 3">
+            <p>Tatalon 3</p>
+        </div>
+        <div class="photo" onclick="redirectToPage('https://geoscriber.github.io/donaimelda')">
+            <img src="images/donaimelda.png" alt="Donaimelda">
+            <p>Donaimelda</p>
+        </div>
+        <div class="photo" onclick="redirectToPage('https://geoscriber.github.io/baguiooil')">
+            <img src="images/baguiooil.png" alt="Baguiooil">
+            <p>Baguiooil</p>
+        </div>
+        <div class="photo" onclick="redirectToPage('https://geoscriber.github.io/fmanalo')">
+            <img src="images/fmanalo.png" alt="Fmanalo">
+            <p>Fmanalo</p>
+        </div>
+        <div class="photo" onclick="redirectToPage('https://geoscriber.github.io/buhangin')">
+            <img src="images/buhangin.png" alt="Buhangin">
+            <p>Buhangin</p>
+        </div>
+    </div>
+
+    <script>
+        function redirectToPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+    </script>
+</body>
+
+</html>
